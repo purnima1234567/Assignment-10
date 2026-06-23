@@ -85,7 +85,8 @@ export function AdminDashboard({ activeTab, setActiveTab }: { activeTab: string,
     e.preventDefault();
     try {
       // Re-using the auth register endpoint to create users from admin panel
-      const res = await fetch("http://localhost:5000/api/auth/register", {
+      const API_BASE = import.meta.env.PROD ? "/api" : "http://localhost:5000/api";
+      const res = await fetch(`${API_BASE}/auth/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newUserForm),
