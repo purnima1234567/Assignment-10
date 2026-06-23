@@ -45,7 +45,8 @@ export function HomePage() {
   useEffect(() => {
     const fetchDoctors = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/doctors");
+        const API_BASE = import.meta.env.PROD ? "/api" : "http://localhost:5000/api";
+        const res = await fetch(`${API_BASE}/doctors`);
         const data = await res.json();
         if (Array.isArray(data)) {
           setFeaturedDoctors(data.slice(0, 6));
