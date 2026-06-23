@@ -1,5 +1,7 @@
 # MediCare Connect 🩺
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fpurnima1234567%2FAssignment-10)
+
 MediCare Connect is a modern healthcare management platform that bridges the gap between patients, doctors, and hospital administrators. Built with a responsive and accessible design, it allows users to seamlessly book appointments, manage medical records, process secure payments, and receive world-class healthcare services online.
 
 ## 🚀 Features
@@ -30,8 +32,8 @@ MediCare Connect is a modern healthcare management platform that bridges the gap
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/jasminaramim/MediCareConnect.git
-   cd MediCareConnect
+   git clone https://github.com/purnima1234567/Assignment-10.git
+   cd Assignment-10
    ```
 
 2. **Install Frontend Dependencies:**
